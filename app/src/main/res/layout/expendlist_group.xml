@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/head_tv"
+        android:text="查看评论:    共有388人评论"
+        android:textSize="15dp"
+        android:textColor="#808080"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"/>
+    <ImageView
+        android:id="@+id/head_iv"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/arrow"
+        android:layout_width="18dp"
+        android:layout_height="18dp"/>
+</RelativeLayout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <FrameLayout
+    android:id="@+id/title_usercenter"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/head_bg">
+
+    <TextView
+        android:id="@+id/head_back_usercenter"
+        style="@style/style_15_EBEBEB_BOLD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:background="@drawable/selector_headbutton"
+        android:clickable="true"
+        android:padding="8dp"
+        android:text=" 更多 "/>
+
+    <TextView
+        style="@style/style_18_BEBEBE_BOLD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="账户中心"/>
+
+    <TextView
+        android:id="@+id/login_quit"
+        style="@style/style_15_EBEBEB_BOLD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_margin="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/selector_headbutton"
+        android:clickable="true"
+        android:padding="8dp"
+        android:text="退出登录"/>
+
+</FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_account_title"
+        android:layout_below="@id/title_usercenter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="8.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="10.0dip">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="账号信息"
+            android:textColor="@android:color/black"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/my_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_account_title"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/my_name_lin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/my_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="left|center"
+                android:text="用户名"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10.0dip"
+                android:gravity="right|center"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/my_bonus_lin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/my_level_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="left|center"
+                android:text="会员等级"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10.0dip"
+                android:gravity="right|center"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/my_level_lin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/my_bonus_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="left|center"
+                android:text="总积分"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10.0dip"
+                android:gravity="right|center"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/my_infoo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_info"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_marginTop="10dip"
+            android:id="@+id/ll_account_myorder"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:background="@drawable/shape_rounded_selectable"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/order_count"
+                android:layout_width="300.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="left|center"
+                android:text="我的订单"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dip"
+                android:src="@drawable/arrow"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_account_address_manage"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/shape_rounded_selectable"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="300.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="left|center"
+                android:text="地址管理"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dip"
+                android:src="@drawable/arrow"/>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/ll_account_giftcard"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/shape_rounded_selectable"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="300.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="left|center"
+                android:text="优惠券/礼品卡"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dip"
+                android:src="@drawable/arrow"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_account_favorite"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/shape_rounded_selectable"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/favourite_count"
+                android:layout_width="300.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0dip"
+                android:gravity="left|center"
+                android:text="收藏夹"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dip"
+                android:src="@drawable/arrow"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

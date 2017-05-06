@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rg_rb"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bar_bg"
+    android:padding="6dp"
+    android:orientation="horizontal"
+    tools:showIn="@layout/activity_main">
+
+    <RadioButton
+        android:id="@+id/rb_home"
+        style="@style/RadioButtonStyles"
+        android:checked="true"
+        android:drawableTop="@drawable/selector_home"
+        android:text="首页"/>
+
+    <RadioButton
+        android:id="@+id/rb_search"
+        style="@style/RadioButtonStyles"
+        android:drawableTop="@drawable/selector_search"
+        android:text="搜索"/>
+
+    <RadioButton
+        android:id="@+id/rb_class"
+        style="@style/RadioButtonStyles"
+        android:drawableTop="@drawable/selector_class"
+        android:text="分类"/>
+
+    <RadioButton
+        android:id="@+id/rb_shopping"
+        style="@style/RadioButtonStyles"
+        android:drawableTop="@drawable/selector_shopping"
+        android:text="购物车"/>
+
+    <RadioButton
+        android:id="@+id/rb_more"
+        style="@style/RadioButtonStyles"
+        android:drawableTop="@drawable/selector_more"
+        android:text="更多"/>
+
+</RadioGroup>

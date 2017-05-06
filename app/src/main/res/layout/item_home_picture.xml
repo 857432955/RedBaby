@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:itheima="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    >
+
+    <com.itheima.redbaby.view.RatioLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itheima:picRatio="2.62"
+        itheima:relative="width">
+
+        <com.itheima.redbaby.view.HomeHeaderViewPager
+            android:id="@+id/vp_item_home_pictures"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.itheima.redbaby.view.HomeHeaderViewPager>
+    </com.itheima.redbaby.view.RatioLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_item_home_pictures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:paddingRight="10dp">
+
+    </LinearLayout>
+</RelativeLayout>

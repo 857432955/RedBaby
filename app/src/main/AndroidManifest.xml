@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.itheima.redbaby">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".base.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity android:name=".MainActivity"/>
+
+        <activity android:name=".SplashActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.Product_clothes"/>
+        <activity android:name=".activity.product_drug"></activity>
+        <activity android:name=".activity.Product_clothes_detail"/>
+
+        <activity
+            android:name=".activity.ClothesFragmentActivity2"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+
+        <activity android:name=".activity.RegisterActivity"></activity>
+
+        <activity android:name=".activity.BrowsingRecordActivity"></activity>
+        <activity android:name=".activity.HelpCenterActivity"></activity>
+        <activity android:name=".activity.UserFeedbackActivity"></activity>
+        <activity android:name=".activity.AboutActivity"></activity>
+        <activity android:name=".activity.ShopingGuidActivity"></activity>
+        <activity android:name=".activity.AftersaleServiceActivity"></activity>
+        <activity android:name=".activity.SendModeActivity"></activity>
+
+    </application>
+
+
+</manifest>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:ellipsize="marquee"
+    android:textAlignment="inherit"
+    android:singleLine="true"
+    android:text="hahaha"
+    android:textColor="#000"
+    android:textSize="20sp"
+    android:id="@+id/address_link_tv"
+    />

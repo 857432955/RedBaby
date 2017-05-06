@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/back_orderdetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/selector_headbutton"
+            android:text="订单详情"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#f00"
+            android:gravity="center"
+            android:text="物流查询"
+            android:textColor="#fff"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_rounded_rectangle"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_inquire"
+                android:layout_marginTop="10dp"
+                android:textColor="#171717"
+                />
+
+            <TextView
+                android:id="@+id/tv_inquire_delivery"
+                style="@style/text_inquire"
+                android:layout_marginTop="10dp"
+                android:text="快递"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_inquire"
+                android:layout_marginTop="10dp"
+                android:text="物流编号:"
+                android:textColor="#171717"
+                />
+
+            <TextView
+                android:id="@+id/tv_inquire_number"
+                style="@style/text_inquire"
+                android:layout_marginTop="10dp"
+                android:text="LP00004378809028"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_inquire"
+                android:text="物流公司"
+                android:layout_marginTop="10dp"
+                android:textColor="#171717"
+                />
+
+            <TextView
+                android:id="@+id/tv_inquire_company"
+                style="@style/text_inquire"
+                android:layout_marginTop="10dp"
+                android:text="顺丰快递"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_inquire"
+                android:layout_marginTop="10dp"
+                android:text="运单号码:"
+                android:textColor="#171717"
+                />
+
+            <TextView
+                android:id="@+id/tv_inquire_tracking_number"
+                style="@style/text_inquire"
+                android:layout_marginTop="10dp"
+                android:text="1200398535929"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text_inquire"
+                android:layout_marginTop="10dp"
+                android:text="物流跟踪"
+                android:textColor="#171717"
+                />
+
+            <TextView
+                android:id="@+id/tv_inquire_logistics_track"
+                style="@style/text_inquire"
+                android:layout_marginTop="10dp"
+                android:text="以下信息由物流公司提供,如有疑问请查询韵达快运官方网站"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="订单详情"
+        android:textColor="#171717"/>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="2011-09-29 18:55:26  上海嘉定公司陆洲服务部KH 发往 豫S51467"
+        android:background="@drawable/shape_rounded_selectable"/>
+
+</LinearLayout>

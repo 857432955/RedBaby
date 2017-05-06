@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/head_bg"
+        android:src="@drawable/head_bg_home"/>
+
+    <LinearLayout
+        android:id="@+id/ll_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/home_search2_2">
+
+        <!--<FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/home_search1">
+
+            <EditText
+                android:id="@+id/et_home_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:singleLine="true"
+                android:background="@android:color/transparent"
+                android:hint="请输入关键字"
+                android:padding="15dp"
+                android:textColor="#000"
+                android:textCursorDrawable="@null"/>
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/btn_home_search"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_home_search_button"
+            android:scaleType="fitXY"
+            />-->
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lv_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#f00"
+        android:dividerHeight="1dp">
+
+    </ListView>
+</LinearLayout>

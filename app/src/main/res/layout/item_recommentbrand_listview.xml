@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_brand_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/segment_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="孕妈专区"
+        android:textColor="#f00"/>
+
+    <LinearLayout
+        android:id="@+id/ll_brand_line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/ibtn_brand_icon0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_recommendbrand"
+            android:scaleType="fitXY"
+            android:src="@drawable/brand"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            android:id="@+id/ibtn_brand_icon1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_recommendbrand"
+            android:scaleType="fitXY"
+            android:src="@drawable/brand"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            android:id="@+id/ibtn_brand_icon2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_recommendbrand"
+            android:scaleType="fitXY"
+            android:src="@drawable/brand"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_brand_line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/ibtn_brand_icon3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_recommendbrand"
+            android:scaleType="fitXY"
+            android:src="@drawable/brand"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            android:id="@+id/ibtn_brand_icon4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_recommendbrand"
+            android:scaleType="fitXY"
+            android:src="@drawable/brand"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            android:id="@+id/ibtn_brand_icon5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_recommendbrand"
+            android:scaleType="fitXY"
+            android:src="@drawable/brand"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_brand_line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@+id/ibtn_brand_icon6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_recommendbrand"
+            android:scaleType="fitXY"
+            android:src="@drawable/brand"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            android:id="@+id/ibtn_brand_icon7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_recommendbrand"
+            android:scaleType="fitXY"
+            android:src="@drawable/brand"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            android:id="@+id/ibtn_brand_icon8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_recommendbrand"
+            android:scaleType="fitXY"
+            android:src="@drawable/brand"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

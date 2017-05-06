@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/home_backgroud"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fraHead"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/head_bg">
+
+
+        <TextView
+            style="@style/style_18_BEBEBE_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="提交成功"/>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="您的订单已提交、我们会尽快安排发货!"
+            android:textColor="#f00"
+            android:textSize="20sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:background="@drawable/shape_rounded_selectable"
+            android:textColor="#888">
+            <TextView
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="您的订单号:100740611834726"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/tv_paysuccess_money"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="应付金额:"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/tv_paysuccess_way"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="支付方式:"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/ordr_submit_bottom_text"
+            style="@style/style_17_FFFFFF_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_long_normal"
+            android:text="继续购物"/>
+
+        <!--<Button
+            android:id="@+id/ordr_detail"
+            style="@style/style_17_FFFFFF_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_long_selected"
+            android:text="订单详情"
+            android:textColor="#888"
+            />-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_rounded_selectable"
+            android:padding="15dp"
+            android:text="如有疑问,您可以拨打客服服务电话:400_xxx_xxx"
+            android:textColor="#888"
+            android:textSize="18sp"/>
+8
+    </LinearLayout>
+</LinearLayout>

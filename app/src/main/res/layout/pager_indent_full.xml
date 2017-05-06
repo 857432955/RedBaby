@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/head_bg">
+
+        <TextView
+            android:id="@+id/head_indent_back"
+            style="@style/style_15_EBEBEB_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:background="@drawable/selector_headbutton"
+            android:clickable="true"
+            android:padding="8dp"
+            android:text=" 账户中心 "/>
+
+        <TextView
+            style="@style/style_18_BEBEBE_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="我的订单"/>
+
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/inident_full_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <RadioButton
+            android:id="@+id/now_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_product_order_sales"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="十分钟内"
+            android:textColor="@color/product_order"
+            android:textSize="18sp"/>
+
+        <RadioButton
+            android:id="@+id/before_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_product_order_sales1"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="十分钟前"
+            android:textColor="#666"
+            android:textSize="18sp"/>
+
+        <RadioButton
+            android:id="@+id/cancle_indent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_product_order_sales2"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="已取消"
+            android:textColor="@color/product_order"
+            android:textSize="18sp"/>
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:background="#999"/>
+
+    <ListView
+        android:id="@+id/lv_indent_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#999"
+        android:dividerHeight=".5dp">
+
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:itheima="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:padding="10dp">
+    <TextView
+        android:id="@+id/tv_item_sales_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:textColor="#000"
+        android:text="新宝宝专题"/>
+    <com.itheima.redbaby.view.RatioLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        itheima:picRatio="2.29"
+        itheima:relative="width">
+
+        <ImageView
+            android:id="@+id/iv_item_sales_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_down"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image1"/>
+    </com.itheima.redbaby.view.RatioLayout>
+
+
+</LinearLayout>

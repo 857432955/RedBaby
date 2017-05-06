@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/title_usercenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/head_bg">
+
+        <TextView
+            android:id="@+id/head_back_register"
+            style="@style/style_15_EBEBEB_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:background="@drawable/selector_headbutton"
+            android:clickable="true"
+            android:padding="8dp"
+            android:text=" 账户中心 "/>
+
+        <TextView
+            style="@style/style_18_BEBEBE_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="注册"/>
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5.0dip"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:text="用户名："
+            android:textSize="15.0sp"/>
+
+        <EditText
+            android:id="@+id/register_name_edit"
+            android:layout_width="220.0dip"
+            android:layout_height="wrap_content"
+            android:hint="输入用户名"
+            android:textColor="#000"
+            android:textSize="15.0sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5.0dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="80.0dip"
+            android:layout_height="wrap_content"
+            android:text="密码:"
+            android:textSize="15.0sp"/>
+
+        <EditText
+            android:id="@+id/register_pwd"
+            android:layout_width="220.0dip"
+            android:layout_height="wrap_content"
+            android:hint="输入至少6位密码"
+            android:textColor="#000"
+            android:maxLength="16"
+            android:password="true"
+            android:textSize="15.0sp"/>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_margin="5.0dip"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="80.0dip"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="确认密码："-->
+            <!--android:textSize="15.0sp"/>-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/register_pwd2"-->
+            <!--android:layout_width="220.0dip"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="输入确认密码"-->
+            <!--android:textColor="#000"-->
+            <!--android:maxLength="16"-->
+            <!--android:password="true"-->
+            <!--android:textSize="15.0sp"/>-->
+    <!--</LinearLayout>-->
+
+    <TextView
+        android:id="@+id/register_text"
+        android:layout_width="120.0dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_pwd_layout"
+        android:layout_gravity="center"
+        android:layout_marginTop="15.0dip"
+        android:gravity="center"
+        android:background="@drawable/button_long"
+        android:text="注  册"/>
+
+</LinearLayout>

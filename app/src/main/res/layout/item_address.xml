@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants"
+                android:padding="5.0dip">
+
+    <RelativeLayout
+        android:id="@+id/order_item_rel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textOrderIDIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="5.0dip"
+            android:text="收货人地址"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/textPriceIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textOrderIDIcon"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="3.0dip"
+            android:text="孙擎"/>
+
+        <TextView
+            android:id="@+id/textTimeIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textPriceIcon"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="3.0dip"
+            android:text="18765659436："/>
+
+        <TextView
+            android:id="@+id/textStateIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textTimeIcon"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="3.0dip"
+            android:text="山东省济南市历城区港沟街道港源六路："/>
+
+
+        <TextView
+            android:id="@+id/orderId_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginTop="5.0dip"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/orderPrice_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/orderId_text"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginTop="3.0dip"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/orderTime_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/orderPrice_text"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginTop="3.0dip"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_width="8.0dip"
+            android:layout_height="13.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow"/>
+
+        <TextView
+            android:id="@+id/orderState_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/orderTime_text"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginTop="3.0dip"
+            android:singleLine="true"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/linOrderPayCancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_item_rel"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linLine"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_below="@id/linOrderPayCancel"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3.0dip"
+        android:background="@drawable/line" android:orientation="horizontal"/>
+</RelativeLayout>
